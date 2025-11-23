@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="image.jpg" />
+    <link rel="stylesheet"  href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
 </head>
 <body>
-    
+    <div class="main-container">
+        <header>
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="intro">
+            <img src="image.jpg" class="my-img" />
+            <p class="img-text-name">Hi, I'm Agraj.</p>
+            <p class="img-text-work">A Computer Science undergraduate passionate about building user-centered digital solutions.</p>
+        </div>
+
+        <div class="details">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm Agraj Pratap Singh, a Computer Science undergraduate at Herald College Kathmandu. I am passionate about software development,
+                    problem-solving, and building efficient web applications that focus on usability and real-world impact.
+                </p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <article>
+                    <h3>Weather App</h3>
+                    <p>A functional weather application built using Vanilla JavaScript, HTML, and CSS. It fetches real-time weather data using the OpenWeather API and stores it in local storage, refreshing automatically every 3 hours.</p>
+                </article>
+
+                <article>
+                    <h3>Gemini AI 2.0</h3>
+                    <p>A partially completed project that interacts with APIs to deliver AI-powered responses. Further improvements and UI development are in progress.</p>
+                </article>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
