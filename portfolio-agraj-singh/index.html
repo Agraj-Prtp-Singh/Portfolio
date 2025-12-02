@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="icon" type="image/jpeg" href="image.jpg" />
-    <link rel="stylesheet"  href="style.css">
-
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
+    
 </head>
 <body>
     <div class="main-container">
+        <!-- Background video -->
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="C:\Personal\Study Materials\FSD\Workshop-1\portfolio-agraj-singh\video.mp4" type="video/mp4">
+        </video>
+
+        <!-- Header -->
         <header>
             <h1>Portfolio</h1>
             <nav>
@@ -23,13 +28,17 @@
             </nav>
         </header>
 
+        <!-- Intro / Hero Section -->
         <div class="intro">
             <img src="image.jpg" class="my-img" />
             <p class="img-text-name">Hi, I'm Agraj.</p>
             <p class="img-text-work">A Computer Science undergraduate passionate about building user-centered digital solutions.</p>
+            <p class="quote">"What life is it, if there's no 'life' in it"</p>
         </div>
 
+        <!-- Details -->
         <div class="details">
+            <!-- About -->
             <section id="about">
                 <h2>About Me</h2>
                 <p>
@@ -38,6 +47,7 @@
                 </p>
             </section>
 
+            <!-- Projects -->
             <section id="projects">
                 <h2>Projects</h2>
 
@@ -52,6 +62,7 @@
                 </article>
             </section>
 
+            <!-- Contact -->
             <section id="contact">
                 <h2>Contact Me</h2>
                 <form action="#" method="post">
