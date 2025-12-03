@@ -59,7 +59,6 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* Intro / Hero */
 .intro {
     margin-top: 120px;
     padding: 40px 20px;
@@ -95,10 +94,10 @@ nav a:hover {
 
 /* Details sections */
 .details {
-    max-width: 900px;
+   /* max-width: 900px;
     margin: auto;
     padding: 40px 20px;
-}
+*/}
 
 section {
     margin-bottom: 60px;
