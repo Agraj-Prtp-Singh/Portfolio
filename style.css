@@ -11,7 +11,6 @@ html {
     background: black;
 }
 
-/* Video Background */
 .background-clip {
     position: fixed;
     top: 0;
@@ -22,7 +21,6 @@ html {
     z-index: -1;
 }
 
-/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -54,7 +52,6 @@ header h1 { font-size: 2rem; }
 
 .nav-links a:hover { background:white; color:black; transform: scale(1.05); }
 
-/* HAMBURGER */
 .hamburger {
     width: 30px;
     height: 22px;
@@ -75,7 +72,6 @@ header h1 { font-size: 2rem; }
 .hamburger.active span:nth-child(2){ opacity: 0; }
 .hamburger.active span:nth-child(3){ transform: translateY(-9px) rotate(-45deg); }
 
-/* HERO */
 .intro {
     margin-top: 120px;
     text-align: center;
@@ -102,8 +98,9 @@ section {
     border-radius:12px;
     backdrop-filter:blur(6px);
 }
-
-/* PROJECTS */
+#projects h2{
+    margin-bottom: 20px;
+}
 .projects-card{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -128,7 +125,6 @@ article img{
     margin-bottom:15px;
 }
 
-/* CONTACT */
 form input, form textarea {
     width:100%; padding:10px;
     background:#111; border:none;
@@ -148,7 +144,6 @@ button {
 
 button:hover{background:white;color:black;}
 
-/* --- RESPONSIVE MOBILE MENU --- */
 @media (max-width:768px){
     .hamburger { display:flex; }
 
