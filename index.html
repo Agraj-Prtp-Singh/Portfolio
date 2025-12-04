@@ -3,82 +3,109 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>My Portfolio | Agraj</title>
     <link rel="icon" type="image/jpeg" href="image.jpg" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    
 </head>
+
 <body>
-    <div class="main-container">
-        <!-- Background video -->
-        <video autoplay loop muted plays-inline class="background-clip">
-            <source src="C:\Personal\Study Materials\FSD\Workshop-1\portfolio-agraj-singh\video.mp4" type="video/mp4">
-        </video>
+<div class="main-container">
 
-        <!-- Header -->
-        <header>
-            <h1>Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Background Video -->
+    <video autoplay loop muted plays-inline class="background-clip">
+        <!-- Use relative path when using hosting -->
+        <source src="video.mp4" type="video/mp4">
+    </video>
 
-        <!-- Intro / Hero Section -->
-        <div class="intro">
-            <img src="image.jpg" class="my-img" />
-            <p class="img-text-name">Hi, I'm Agraj.</p>
-            <p class="img-text-work">A Computer Science undergraduate passionate about building user-centered digital solutions.</p>
-            <p class="quote">"What life is it, if there's no 'life' in it"</p>
+    <!-- Header -->
+    <header>
+        <h1>Portfolio</h1>
+
+        <nav class="nav-links" id="navMenu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </header>
 
-        <!-- Details -->
-        <div class="details">
-            <!-- About -->
-            <section id="about">
-                <h2>About Me</h2>
-                <p>
-                    I'm Agraj Pratap Singh, a Computer Science undergraduate at Herald College Kathmandu. I am passionate about software development,
-                    problem-solving, and building efficient web applications that focus on usability and real-world impact.
-                </p>
-            </section>
-
-            <!-- Projects -->
-            <section id="projects">
-                <h2>Projects</h2>
-
-                <article>
-                    <h3>Weather App</h3>
-                    <p>A functional weather application built using Vanilla JavaScript, HTML, and CSS. It fetches real-time weather data using the OpenWeather API and stores it in local storage, refreshing automatically every 3 hours.</p>
-                </article>
-
-                <article>
-                    <h3>Gemini AI 2.0</h3>
-                    <p>A partially completed project that interacts with APIs to deliver AI-powered responses. Further improvements and UI development are in progress.</p>
-                </article>
-            </section>
-
-            <!-- Contact -->
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </div>
+    <!-- Hero Section -->
+    <div class="intro">
+        <img src="image.jpg" class="my-img" />
+        <p class="img-text-name">Hi, I'm Agraj.</p>
+        <p class="img-text-work">A Computer Science undergraduate passionate about building user-centered digital solutions.</p>
+        <p class="quote">"What life is it, if there's no 'life' in it"</p>
     </div>
+
+    <!-- Details Section -->
+    <div class="details">
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm Agraj Pratap Singh, a Computer Science undergraduate at Herald College Kathmandu. 
+                Passionate about web development, problem solving and creating digital experiences that matter.
+            </p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="projects-card">
+                <article>
+                    <h3 class="project-title">Weather App</h3>
+                    <img src="weather.png">
+                    <p>A weather app developed with Vanilla JS, HTML & CSS using OpenWeather API. Automatically refreshes every 3 hours.</p>
+                </article>
+
+                <article>
+                    <h3 class="project-title">Gemini AI 2.0</h3>
+                    <img src="Gemini.webp">
+                    <p>An AI-powered system that interacts using API responses. UI redesign and improvement in progress.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" required />
+
+                <label>Email:</label>
+                <input type="email" required />
+
+                <label>Message:</label>
+                <textarea rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</div>
+
+<!-- Script for Hamburger -->
+<script>
+    const hamburger = document.getElementById("hamburgerBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+</script>
+
 </body>
 </html>
